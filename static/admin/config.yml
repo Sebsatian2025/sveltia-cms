@@ -1,11 +1,14 @@
 backend:
   name: github
-  repo: "Sebsatian2025/sveltia-cms"  # tu repo en GitHub
-  branch: "main"                      # rama donde se van a guardar los cambios
-  auth_scope: "repo"                   # permisos necesarios
-  client_id: ${GITHUB_CLIENT_ID}
-  client_secret: ${GITHUB_CLIENT_SECRET}
-  callback_url: ${OAUTH_CALLBACK}
+  repo: Sebsatian2025/democms   # <- tu repo donde está la web
+  branch: main                  # <- la rama que Netlify usa
+  auth_type: oauth
+  client_id: Ov23liLTEWyd0V5ewjf8       # <- tu GITHUB_CLIENT_ID
+  client_secret: 039028d559e63b5dc0ed180888b15635ed7ebba9  # <- tu GITHUB_CLIENT_SECRET
+  commit_messages:
+    create: "Agregar nuevo contenido"
+    update: "Actualizar contenido existente"
+    delete: "Eliminar contenido"
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -18,6 +21,6 @@ collections:
         name: "header"
         file: "content/header.md"
         fields:
-          - { label: "Imagen de fondo",  name: "header_background", widget: "image" }
+          - { label: "Imagen de fondo",  name: "header_background", widget: "image"  }
           - { label: "Título principal", name: "header_title",      widget: "string" }
           - { label: "Subtítulo",        name: "header_subtitle",   widget: "string" }
