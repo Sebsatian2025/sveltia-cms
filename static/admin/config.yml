@@ -1,0 +1,17 @@
+backend:
+  name: test-repo  # backend de prueba, local
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "site_content"
+    label: "Contenido del sitio"
+    files:
+      - label: "Header"
+        name: "header"
+        file: "content/header.md"
+        fields:
+          - { label: "Imagen de fondo",  name: "header_background", widget: "image"  }
+          - { label: "Título principal", name: "header_title",      widget: "string" }
+          - { label: "Subtítulo",        name: "header_subtitle",   widget: "string" }

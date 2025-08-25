@@ -1,0 +1,80 @@
+{
+  "pages": {
+    "collections": "Colecciones",
+    "contents": "Contenidos",
+    "entries": "Entradas",
+    "files": "Archivos",
+    "assets": "Recursos",
+    "media": "Multimedia",
+    "workflow": "Flujo de trabajo",
+    "editorial_workflow": "Flujo de trabajo editorial",
+    "menu": "Menú"
+  },
+  "account": {
+    "user_name": "Nombre de usuario",
+    "password": "Contraseña",
+    "sign_in": "Iniciar sesión",
+    "sign_out": "Cerrar sesión",
+    "signed_in_as_x": "Sesión iniciada como {name}"
+  },
+  "common": {
+    "create": "Nuevo",
+    "select": "Seleccionar",
+    "select_all": "Seleccionar todo",
+    "upload": "Subir",
+    "copy": "Copiar",
+    "download": "Descargar",
+    "duplicate": "Duplicar",
+    "delete": "Eliminar",
+    "save": "Guardar",
+    "saving": "Guardando…",
+    "rename": "Renombrar",
+    "update": "Actualizar",
+    "add": "Añadir",
+    "remove": "Quitar",
+    "clear": "Borrar",
+    "expand": "Expandir",
+    "collapse": "Contraer"
+  },
+  "errors": {
+    "clipboard_error": "Hubo un error al copiar los datos.",
+    "sign_in_error": {
+      "not_project_root": "La carpeta que has seleccionado no es un directorio raíz de repositorio.",
+      "picker_dismissed": "No se pudo seleccionar un directorio raíz de repositorio.",
+      "authentication_aborted": "Autenticación cancelada.",
+      "invalid_token": "El token proporcionado no es válido."
+    },
+    "repository_no_access": "No tienes acceso al repositorio “{repo}”.",
+    "repository_not_found": "El repositorio “{repo}” no existe.",
+    "repository_empty": "El repositorio “{repo}” no tiene ramas."
+  },
+  "editor": {
+    "content_editor": "Editor de contenido",
+    "save_and_publish": "Guardar y publicar",
+    "save_without_publishing": "Guardar sin publicar",
+    "cancel_editing": "Cancelar edición",
+    "edit_entry_title": "{collection} › {entry}",
+    "edit_singleton_announcement": "Ahora estás editando el archivo “{file}”.",
+    "locale_content_disabled_short": "(deshabilitado)",
+    "locale_content_error_short": "(error)"
+  },
+  "prefs": {
+    "appearance": {
+      "title": "Apariencia",
+      "theme": "Tema",
+      "select_theme": "Seleccionar tema",
+      "theme_options": {
+        "auto": "Automático",
+        "dark": "Oscuro",
+        "light": "Claro"
+      }
+    },
+    "language": {
+      "title": "Idioma",
+      "ui_language": {
+        "title": "Idioma de la interfaz de usuario",
+        "select_language": "Seleccionar idioma"
+      }
+    }
+  }
+}
