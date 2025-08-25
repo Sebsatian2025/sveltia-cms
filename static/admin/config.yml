@@ -1,5 +1,11 @@
 backend:
-  name: test-repo  # backend de prueba, local
+  name: github
+  repo: "Sebsatian2025/sveltia-cms"  # tu repo en GitHub
+  branch: "main"                      # rama donde se van a guardar los cambios
+  auth_scope: "repo"                   # permisos necesarios
+  client_id: ${GITHUB_CLIENT_ID}
+  client_secret: ${GITHUB_CLIENT_SECRET}
+  callback_url: ${OAUTH_CALLBACK}
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -12,6 +18,6 @@ collections:
         name: "header"
         file: "content/header.md"
         fields:
-          - { label: "Imagen de fondo",  name: "header_background", widget: "image"  }
+          - { label: "Imagen de fondo",  name: "header_background", widget: "image" }
           - { label: "Título principal", name: "header_title",      widget: "string" }
           - { label: "Subtítulo",        name: "header_subtitle",   widget: "string" }
